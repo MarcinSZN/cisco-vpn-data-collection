@@ -14,8 +14,9 @@ By moving away from legacy CLI "screen-scraping," this script leverages structur
 
 ## 📋 Prerequisites & Setup
 1. **Network Device Requirement:** NETCONF must be enabled on the target Cisco IOS-XE devices:
+   ```config
    netconf-yang
-2. In root directory 'devices.csv' file should be created detailing network topology (example of such file you can find in repository)
+3. In root directory 'devices.csv' file should be created detailing network topology (example of such file you can find in repository)
 
 ## 💻 How to Run the Script
 1. install all required Python modules
