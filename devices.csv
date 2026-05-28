@@ -1,0 +1,3 @@
+host,ip_addr
+example_router1,192.168.0.1
+example_router2,172.16.0.2
