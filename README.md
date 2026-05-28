@@ -19,9 +19,16 @@ By moving away from legacy CLI "screen-scraping," this script leverages structur
 3. In root directory 'devices.csv' file should be created detailing network topology (example of such file you can find in repository)
 
 ## 💻 How to Run the Script
-1. install all required Python modules
-2. run script from terminal:
-   - [user@machine]$ python vpn_data_collector.py
+1. Clone the repository
+   ```bash
+   git clone [https://github.com/MarcinSZN/cisco-vpn-data-collection.git](https://github.com/MarcinSZN/cisco-vpn-data-collection.git)
+   cd cisco-vpn-data-collection
+3. install all required Python dependencies
+   ```bash
+   pip install -r requirements.txt
+5. run script from terminal:
+   ```bash
+   python vpn_data_collector.py
 
 ## 📊 Standardized Output
 ```text
