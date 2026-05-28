@@ -58,7 +58,7 @@ for device in list_of_devices:
         print(f"\nConnecting to the device {device['host']} {device['ip_addr']}")
         with manager.connect(host=device['ip_addr'], **DEVICE_PARAMS) as m:
             output_config_xml = m.get_config(source='running', filter=schema).data_xml
-        	root = ET.fromstring(output_config_xml)
+            root = ET.fromstring(output_config_xml)
 
         # Creating dictionary for pandas 'pd' module
         # Looking up needed values in the xml file based on etree module and XPath
