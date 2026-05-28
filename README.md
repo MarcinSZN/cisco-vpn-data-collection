@@ -23,10 +23,13 @@ By moving away from legacy CLI "screen-scraping," this script leverages structur
    - [user@machine]$ python vpn_data_collector.py
 
 ## 📊 Standardized Output
-   VPN_NAME   LOCAL_IP_ADDR 3rdParty_REMOTE_ADDRESS IKE_LIFETIME IKE_AUTH_TYPE CRYPTO_MAP_PFS_GROUP     IPSEC_TRANSFORM_SET IPSEC_LIFETIME
-|S2S_Branch1   |  192.168.1.1              172.16.0.1        28800     pre-share              group20 AES_CBC_256_HMAC_SHA256          28800
-S2S_Branch2     192.168.1.1             10.10.10.10        28800     pre-share              group14 AES_CBC_256_HMAC_SHA256          14400
-AZURE_Transit   192.168.0.1                 1.2.3.4        86400     pre-share              group10 AES_CBC_256_HMAC_SHA256           None
+```text
+VPN_NAME        LOCAL_IP_ADDR  3rdParty_REMOTE_ADDRESS  IKE_LIFETIME  IKE_AUTH_TYPE  CRYPTO_MAP_PFS_GROUP  IPSEC_TRANSFORM_SET      IPSEC_LIFETIME
+S2S_Branch1     192.168.1.1    172.16.0.1               28800         pre-share      group20               AES_CBC_256_HMAC_SHA256  28800
+S2S_Branch2     192.168.1.1    10.10.10.10              28800         pre-share      group14               AES_CBC_256_HMAC_SHA256  14400
+AZURE_Transit   192.168.0.1    1.2.3.4                  86400         pre-share      group10               AES_CBC_256_HMAC_SHA256  None
+
+
 
 ## Disclaimer
 Script **might not** work for every possible S2S Tunnel configuration, might crash by oversight, it collects only portion of data from the configuration, and eventually might be extended with more featues by anyone.
