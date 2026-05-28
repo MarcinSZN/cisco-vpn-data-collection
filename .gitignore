@@ -1,1 +1,11 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
 
+# Local data outputs
+*.xml
+*.csv
+*.xlsx
+
+# Environment variables / private keys
+.env
